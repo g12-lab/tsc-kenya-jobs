@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TSC Kenya Jobs</title>
+    <style>
+        body { font-family: Arial; background: #f0f2f5; margin: 0; padding: 20px; }
+        .card { background: white; border-radius: 10px; padding: 20px; max-width: 500px; margin: auto; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        h1 { color: #006600; text-align: center; }
+        .job { border-bottom: 1px solid #ddd; padding: 15px 0; }
+        .job h3 { margin: 0 0 5px 0; color: #333; }
+        .job p { margin: 5px 0; color: #666; font-size: 14px; }
+        .pay-btn { background: #00a651; color: white; border: none; padding: 10px 20px; border-radius: 5px; width: 100%; font-size: 16px; cursor: pointer; margin-top: 10px; }
+        .pay-btn:active { background: #008a44; }
+        .info { font-size: 12px; color: #999; text-align: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🇰🇪 TSC Kenya Jobs</h1>
+        <p style="text-align:center; color:#555;">Available Positions</p>
+
+        <div class="job">
+            <h3>Primary School Teacher</h3>
+            <p>Location: Nairobi | Salary: KES 30,000 - 50,000</p>
+            <p>Requirements: P1 Certificate, TSC Number</p>
+            <button class="pay-btn" onclick="payNow('Primary Teacher')">Apply & Pay (KES 1000)</button>
+        </div>
+
+        <div class="job">
+            <h3>Secondary School Teacher (Maths)</h3>
+            <p>Location: Mombasa | Salary: KES 40,000 - 60,000</p>
+            <p>Requirements: B.Ed (Science), TSC Number</p>
+            <button class="pay-btn" onclick="payNow('Secondary Maths Teacher')">Apply & Pay (KES 1000)</button>
+        </div>
+
+        <div class="info">
+            Payment goes to M-Pesa: 0741601604<br>
+            After payment, send screenshot to WhatsApp for confirmation.
+        </div>
+    </div>
+
+    <script>
+        function payNow(jobTitle) {
+            // This is where the payment logic would go.
+            // For now, we just show an alert so you can see how it works.
+            alert("You are applying for: " + jobTitle + "\n\nPlease pay KES 1000 to M-Pesa number 0741601604.\n\nAfter payment, refresh this page.");
+            
+            // In a real app, you would call an API here to trigger the M-Pesa STK push.
+            // But GitHub Pages cannot do that securely. See the explanation below.
+        }
+    </script>
+</body>
+</html>
